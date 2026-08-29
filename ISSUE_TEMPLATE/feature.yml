@@ -1,0 +1,50 @@
+name: Feature Request
+description: Propose a new QuanRobotics capability or improvement.
+title: "[FEATURE] "
+
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: What problem or need does this feature address?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed Scope
+      description: What should be included?
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: What is intentionally excluded?
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Repositories, hardware, datasets, interfaces, or decisions.
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Expected Evidence
+      description: Tests, demo, benchmark, screenshots, documentation, etc.
+    validations:
+      required: true
