@@ -1,0 +1,38 @@
+name: Documentation Task
+description: Create, update, or correct QuanRobotics documentation.
+title: "[DOCS] "
+
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Documentation Goal
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected Documentation
+      description: README, setup guide, API docs, architecture, website, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: Required Changes
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] Technically correct
+        - [ ] Reproducible
+        - [ ] Links verified
+        - [ ] Known limitations included
+    validations:
+      required: true
