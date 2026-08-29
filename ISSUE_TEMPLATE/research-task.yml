@@ -1,0 +1,57 @@
+name: Research Task
+description: Define a QuanRobotics research experiment or investigation.
+title: "[RESEARCH] "
+
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research Question
+      description: What question are we trying to answer?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why does this matter to QuanRobotics?
+    validations:
+      required: true
+
+  - type: textarea
+    id: method
+    attributes:
+      label: Proposed Method
+      description: Dataset, model, simulator, experiment, or evaluation method.
+    validations:
+      required: true
+
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Evaluation Metrics
+      description: How will results be measured?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducibility
+    attributes:
+      label: Reproducibility Requirements
+      description: Code, configurations, seeds, versions, hardware, datasets, commands.
+    validations:
+      required: true
+
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Expected Limitations or Risks
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Required Evidence
+      description: Notebook, report, benchmark, plots, PR, model card, etc.
+    validations:
+      required: true
