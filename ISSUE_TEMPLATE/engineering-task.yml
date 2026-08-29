@@ -1,0 +1,74 @@
+name: Engineering Task
+description: Define an implementation-ready QuanRobotics engineering task.
+title: "[ENG] "
+
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What technical result must be achieved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Technical Context
+      description: Relevant architecture, repository, module, or interface.
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Proposed Implementation
+      description: Suggested technical implementation steps.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] Implementation complete
+        - [ ] Tests pass
+        - [ ] Documentation updated
+        - [ ] Evidence attached
+    validations:
+      required: true
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Required Tests
+      description: Unit, integration, CI, simulation, benchmark, or manual validation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Other tasks, repositories, libraries, hardware, or decisions.
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Required Evidence
+      description: PR, CI run, benchmark, logs, screenshots, documentation, etc.
+    validations:
+      required: true
+
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      placeholder: "@username"
+
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer
+      placeholder: "@username or team"
